@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(menu.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imagen.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+form{
+    /*forma del recuadro*/
+    width: 300px;
+    margin: auto;
+    background: rgba(0,0,0,0.8);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+        table{
+    /*forma del recuadro*/
+    width: 400px;
+    margin: auto;
+    background: #FCFBFB;
+    padding: 10px 20px;
+    border-radius: 20px;
+            color: black;
+            margin-top: 10%;
+            text-align: center;
+}
+ h3{
+            color: white;
+            
+        }
+th {
+    padding: 8px 20px;
+    border-radius: 20px;
+   background: #000000;
+}
+
+#formusuario{
+    width: 400px;
+}
+
+h1{
+   /*personalización texto*/
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 10px; 
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+select{
+    padding: 8px;
+    width: 100%;
+    font-size: 20px;
+}
+input{
+    display: block;
+    padding: 7px;
+    margin: 12px 0;
+    font-size: 20px;
+}
+.contenedor-inputs{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input-100{    
+    width: 100%;
+}
+input[type="submit"]{
+    background: linear-gradient(#02FEEB, #1CFBEA);
+    border: 0;
+    color: firebrick;
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+input[type="submit"]:hover{
+    opacity: 1;
+}
+input[type="submit"]:active{
+    transform: scale(0.95);
+}
+
+@media(max-width:480px){
+    #formusuario, form{
+        width: 95%;
+    }
+}
+
+@media (max-width:480px){
+    #formusuario, form{
+        width: 100%;
+    }
+}
+
+
+@media (min-width:768px) { 
+    .sociales {
+        width: auto;
+    }
+    
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1060px;
+    }
+}
+
+a{
+    color: white; 
+    text-decoration: none;
+}
